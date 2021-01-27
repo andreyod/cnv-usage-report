@@ -30,7 +30,7 @@ def weekly_email_domains(pc, end_time):
 def get_percentage(part, whole):
     percentage = 100 * float(part)/float(whole)
     return "{:.1f}".format(percentage)
-    
+
 def running_vms(pc, end_time):
     q = """sum(cnv:vmi_status_running:count + on (_id) group_left(_blah) (0 * group by (_id, email_domain) (id_version_ebs_account_internal:cluster_subscribed{internal=""})) + 0)"""
     v = pc.custom_query_range(
