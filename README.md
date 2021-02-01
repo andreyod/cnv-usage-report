@@ -4,7 +4,7 @@ This script will query Telemeter data and produce report for CNV usage.
 
 ## Prerequisites:
 1. Python 3
-2. Prometheus Client API
+2. Prometheus API Client
 ```bash
 pip install prometheus-api-client
 ```
