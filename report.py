@@ -4,7 +4,6 @@ import prometheus_api_client
 import requests
 
 requests.packages.urllib3.disable_warnings()
-#prometheus_api_client.prometheus_connect.CONNECTION_RETRY_WAIT_TIME=60000
 
 url = os.environ.get("PROM_URL", "https://telemeter-lts.datahub.redhat.com")
 try:
